@@ -13,13 +13,14 @@ import {
   FileSpreadsheet,
   CheckCircle2,
   Lock,
+  LineChart,
 } from 'lucide-react';
 
 interface DashboardShellProps {
   currentRole: UserRole;
   onRoleChange: (role: UserRole) => void;
-  activeTab: 'triage' | 'impact' | 'trust' | 'query' | 'audit' | 'datasets';
-  onTabChange: (tab: 'triage' | 'impact' | 'trust' | 'query' | 'audit' | 'datasets') => void;
+  activeTab: 'triage' | 'analytics' | 'impact' | 'trust' | 'query' | 'audit' | 'datasets';
+  onTabChange: (tab: 'triage' | 'analytics' | 'impact' | 'trust' | 'query' | 'audit' | 'datasets') => void;
   scorecard: TrustScorecard | null;
   onRunReconciliation: () => void;
   onResetSimulation: () => void;
@@ -74,6 +75,17 @@ export const DashboardShell: React.FC<DashboardShellProps> = ({
                 {scorecard.criticalIssuesCount}
               </span>
             )}
+          </button>
+          <button
+            onClick={() => onTabChange('analytics')}
+            className={`px-3 py-1.5 rounded-md font-medium transition-colors whitespace-nowrap flex items-center gap-1.5 ${
+              activeTab === 'analytics'
+                ? 'bg-slate-800 text-white shadow-sm'
+                : 'text-slate-400 hover:text-slate-200'
+            }`}
+          >
+            <LineChart className="w-3.5 h-3.5 text-sky-400" />
+            Analytics & Graphs
           </button>
           <button
             onClick={() => onTabChange('impact')}

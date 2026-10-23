@@ -19,12 +19,13 @@ import { NLQueryBox } from './components/nl-query-box';
 import { ApprovalModal } from './components/approval-modal';
 import { AuditTrailView } from './components/audit-trail-view';
 import { DatasetsInspector } from './components/datasets-inspector';
+import { AnalyticsHub } from './components/analytics-hub';
 import { loadAllHRDatasets } from '../lib/csv-loader';
 import { runReconciliation } from '../lib/matching-engine';
 
 export default function App() {
   const [currentRole, setCurrentRole] = useState<UserRole>('Data Steward');
-  const [activeTab, setActiveTab] = useState<'triage' | 'impact' | 'trust' | 'query' | 'audit' | 'datasets'>('triage');
+  const [activeTab, setActiveTab] = useState<'triage' | 'analytics' | 'impact' | 'trust' | 'query' | 'audit' | 'datasets'>('triage');
 
   const [discrepancies, setDiscrepancies] = useState<Discrepancy[]>([]);
   const [scorecard, setScorecard] = useState<TrustScorecardType | null>(null);
@@ -95,8 +96,8 @@ export default function App() {
       setActiveTab('triage');
       showNotification(`Switched to Data Steward role: Focus on issue triage and data quality fixes.`, 'info');
     } else if (role === 'Analytics Lead') {
-      setActiveTab('trust');
-      showNotification(`Switched to Analytics Lead role: Viewing enterprise trust scorecards & field integrity.`, 'info');
+      setActiveTab('analytics');
+      showNotification(`Switched to Analytics Lead role: Viewing executive risk analytics, exposure graphs & trends.`, 'info');
     } else if (role === 'Systems Owner') {
       setActiveTab('impact');
       showNotification(`Switched to Systems Owner role: Monitoring downstream dependencies & cutoff timers.`, 'info');
@@ -273,6 +274,18 @@ export default function App() {
           onNavigateToImpact={handleNavigateToImpact}
           currentRole={currentRole}
           isExplainingId={isExplainingId}
+        />
+      )}
+
+      {activeTab === 'analytics' && (
+        <AnalyticsHub
+          discrepancies={discrepancies}
+          scorecard={scorecard}
+          onSelectDiscrepancy={(id) => {
+            setSelectedImpactId(id);
+            setActiveTab('impact');
+          }}
+          onNavigateToTab={(tab) => setActiveTab(tab)}
         />
       )}
 

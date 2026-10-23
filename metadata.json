@@ -1,0 +1,6 @@
+{
+  "name": "Emirates Group HR Cognitive Data Reconciliation Platform",
+  "description": "Automated multi-system HR data reconciliation, entity resolution, AI-powered downstream impact analysis, and plain-language query engine for Emirates Group.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

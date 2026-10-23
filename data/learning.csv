@@ -1,0 +1,20 @@
+certification_id,staff_number,attendee_name,course_code,course_name,issuing_authority,completion_date,valid_until,compliance_status,score_pct,renewal_required
+CERT-7701,EK-10142,Tariq Al-Mansoor,GCAA-B777-LPC,Boeing 777 Line Proficiency & Recurrent Sim Check,UAE GCAA,2025-09-15,2026-09-15,Expired,94,true
+CERT-7702,EK-10142,Tariq Al-Mansoor,GCAA-MED-CL1,GCAA Class 1 Flight Crew Medical Certification,UAE GCAA Aeromedical,2026-02-10,2027-02-10,Valid,100,false
+CERT-3801,EK-10255,Sarah Jenkins,GCAA-A380-LPC,Airbus A380 Recurrent Simulator Proficiency Check,UAE GCAA,2026-04-12,2027-04-12,Valid,98,false
+CERT-3802,EK-10255,Sarah Jenkins,GCAA-MED-CL1,GCAA Class 1 Flight Crew Medical Certification,UAE GCAA Aeromedical,2026-05-18,2027-05-18,Valid,100,false
+CERT-5001,EK-10389,Mohammed Al-Hashimi,EASA-P145-EWIS,EASA/GCAA Part-145 EWIS & Fuel Tank Safety Phase 2,EASA / UAE GCAA,2024-08-30,2026-08-30,Expired,91,true
+CERT-5002,EK-10389,Mohammed Al-Hashimi,GCAA-P66-AV,GCAA Part-66 Aircraft Maintenance Engineer License Recurrent,UAE GCAA,2025-11-20,2027-11-20,Valid,96,false
+CERT-2041,EK-10492,Elena Rostova,EK-SEP-ANNUAL,Annual Safety & Emergency Procedures (A380/B777),Emirates Aviation College,2026-01-15,2027-01-15,Valid,99,false
+CERT-3011,EK-10511,Rashid Al-Maktoum,EK-SEC-AWARE,Group Cyber Defense & Data Privacy Refresher,Emirates Group IT,2026-03-01,2027-03-01,Valid,100,false
+CERT-4021,EK-10640,Fatima Zahra,IFRS-FIN-REP,IFRS & International Financial Reporting Standards,Emirates Finance,2025-12-10,2027-12-10,Valid,95,false
+CERT-8801,DN-20104,Rajesh Nambiar,DN-ADP-CAT3,DXB Airside Driving Permit - Category 3 (Heavy Ramp),Dubai Airports Authority,2024-10-26,2026-10-26,Expiring_Soon,92,true
+CERT-8802,DN-20104,Rajesh Nambiar,IATA-DGR-CAT8,IATA Dangerous Goods Acceptance & Ramp Handling,IATA Training,2025-06-14,2027-06-14,Valid,95,false
+CERT-8901,DN-20219,Ahmed Al-Falasi,IATA-DGR-CAT6,IATA Dangerous Goods Regulations - Cat 6 Certification,IATA Training,2024-04-10,2026-04-10,Expired,88,true
+CERT-9101,DN-20350,Grace O'Connor,DWC-RAMP-SAFETY,DWC Al Maktoum Ground Operations Safety Matrix,dnata Safety,2026-02-14,2027-02-14,Valid,97,false
+CERT-3803,EK-10788,Marcus Vanderbilt,GCAA-A380-LPC,Airbus A380 Line Proficiency & Command Recurrent,UAE GCAA,2026-03-20,2027-03-20,Valid,99,false
+CERT-2042,EK-10899,Priya Sharma,EK-SEP-ANNUAL,Annual Safety & Emergency Procedures (A380/B777),Emirates Aviation College,2026-02-10,2027-02-10,Valid,97,false
+CERT-5003,EK-10950,Khaled Al-Nuaimi,GCAA-AV-RADAR,Aircraft Weather Radar & TCAS Maintenance Certification,UAE GCAA,2025-08-15,2027-08-15,Valid,94,false
+CERT-7703,EK-11022,Carlos Mendez,GCAA-B777-LPC,Boeing 777 Line Proficiency Check,UAE GCAA,2026-06-18,2027-06-18,Valid,96,false
+CERT-1011,EK-11105,Amina Bello,CIPD-HR-TALENT,CIPD Strategic People Management & UAE Labour Law,CIPD Middle East,2025-10-01,2027-10-01,Valid,93,false
+CERT-4011,DN-20488,Hassan Al-Balooshi,HACCP-AIR-CAT,HACCP Level 4 Inflight Catering Food Safety Certification,Dubai Municipality Food Safety,2026-01-20,2028-01-20,Valid,98,false
